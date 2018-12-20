@@ -8,15 +8,14 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.globant.bootcamps</groupId>
-	<artifactId>spring-jpa-h2-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>spring-jpa-h2-demo</name>
-	<description>Demo project for Spring Boot wit H2 and JPA</description>
+	<groupId>com.spring.java.example</groupId>
+	<artifactId>spring-jpa-h2-example</artifactId>
+	<version>0.1</version>
+	<name>Client.service.Api</name>
+	<description>Client shopCart max</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
@@ -49,6 +48,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

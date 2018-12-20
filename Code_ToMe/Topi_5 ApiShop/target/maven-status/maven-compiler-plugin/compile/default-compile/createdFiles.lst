@@ -1,0 +1,12 @@
+com\client\api\controller\ClientController.class
+com\client\api\main\SpringJpaH2ExampleApplication.class
+com\client\api\repository\ClientRepository.class
+com\client\api\main\PersonService.class
+com\client\api\main\PersonJpaRepository.class
+com\client\api\main\PersonRestController$PersonNotFoundException.class
+com\client\api\service\ClientService.class
+com\client\api\main\PersonRestController.class
+com\client\api\controller\ClientController$ClientNotFoundException.class
+com\client\api\main\Person.class
+com\client\api\controller\ClientController$PersonRestController.class
+com\client\api\model\Client.class
