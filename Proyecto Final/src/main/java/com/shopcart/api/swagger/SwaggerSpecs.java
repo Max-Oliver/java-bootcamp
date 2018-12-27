@@ -1,11 +1,12 @@
 package com.shopcart.api.swagger;
 
-import static springfox.documentation.builders.PathSelectors.regex;
-import java.time.LocalDateTime;
-import java.util.Date;
+//import static springfox.documentation.builders.PathSelectors.regex;
+//import java.time.LocalDateTime;
+//import java.util.Date;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
@@ -23,13 +24,18 @@ public class SwaggerSpecs {
     @Bean
   public Docket Api() {
       return new Docket(DocumentationType.SWAGGER_2)
-              .groupName("client/Produdct/Cart")
+              //.groupName("client/Produdct/Cart")
               .apiInfo(apiInfo())       
-              .directModelSubstitute(LocalDateTime.class, Date.class)
-              .select()
-              .apis(RequestHandlerSelectors.basePackage("com.shopcart.api"))
-              .paths(regex("/*"))
-              .build();
+              //.directModelSubstitute(LocalDateTime.class, Date.class)
+              //.select()
+              //.apis(RequestHandlerSelectors.any("com.shopcart.api"))
+              //.paths(regex("/*"))
+              //.build();
+      
+      .select()
+      .apis(RequestHandlerSelectors.any())
+      .paths(PathSelectors.any())
+      .build();
   }
    	
 	private ApiInfo apiInfo() {
@@ -40,3 +46,4 @@ public class SwaggerSpecs {
 				.build();
 	}
 }
+ 
