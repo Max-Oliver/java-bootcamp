@@ -2,10 +2,23 @@ Subo el proyecto, me falta arreglar algunos temas
 subo lo que tengo hasta ahora por tema de tiempo y para que vean si pueden decirme donde esta el fallo, debido 
 a que al levantar spring boot , parece ser que todo esta bien, pero donde deberia saltar el log de conectado no lo hace, 
 pienso que por ahi viene la falla, aunque trate de utilizar H2 para ver si era de la conexion, 
-y si me la pudo crear las tablas en 
-H2. pero al momento de ver el Swagger para ver mis Endpoints, me lo muestra pelado, vacio ,
-y busque por donde puede ser la falla , la configuracion del swagger parece estar bien, tanto como del property 
-para la conexion.
+y si me la pudo crear las tablas en H2. 
+
+//ERROR - 
+/* 
+*pero al momento de ver el Swagger para ver mis Endpoints, me lo muestra pelado, vacio ,
+*y busque por donde puede ser la falla , la configuracion del swagger parece estar bien, tanto como del property 
+*/
+
+//FIXED
+Fix- Problema de Swagger solucionado. ahora reconoce los endsPoints, con sus posibles GET - POST etc.
+
+//ERROR
+  Aunque el problema que persiste aun es el de la conectividad con la bd , supongo que debe de ser por ahi, 
+  seguire buscando soluciones para hacerlo andar lo antes posible.
+
+
+Para la conexion.
 Debi colocarle un pequeño codigo de URL a la conxion de mi localhost para que me arreglara un problema de UTF UTC Time-Zone
 pero parece estar bien,
 
