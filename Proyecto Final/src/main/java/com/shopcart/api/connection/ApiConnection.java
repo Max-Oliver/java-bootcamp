@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public final class ApiConnection {
 
 	private static Connection cnn = null;
-	private static String url;
+	private static String url ;
 	private static String user;
 	private static String pswd;
 	private static String drvDb;
@@ -20,22 +20,22 @@ public final class ApiConnection {
 	private final static Logger log_DB = Logger.getLogger("Connecion_DataBase");
 
 	@Autowired
-	public static void setUrl(@Value("${spring.datasource.url}") String urlDataBase) {
+	public static void setUrl(/*@Value("${spring.datasource.url}") */String urlDataBase) {
 		url = urlDataBase;
 	}
 
 	@Autowired
-	public static void setUser(@Value("${spring.datasource.username}") String username) {
+	public static void setUser(/*@Value("${spring.datasource.username}") */String username) {
 		user = username;
 	}
 	
 	@Autowired
-	public static void setPswd(@Value("${spring.datasource.password}") String pass) {
+	public static void setPswd(/*@Value("${spring.datasource.password}") */String pass) {
 		pswd = pass;
 	}
 	
 	@Autowired
-	public static void setDrvDb(@Value("${spring.datasource.Driver}") String driverdb) {
+	public static void setDrvDb(/*@Value("${spring.datasource.Driver}")*/ String driverdb) {
 		drvDb = driverdb;
 	}
 	private ApiConnection() {}

@@ -13,6 +13,7 @@ import com.shopcart.api.connection.ApiConnection;
 import com.shopcart.api.model.Client;
 import com.shopcart.api.repository.ClientRepository;
 
+
 @Service
 public class ClientService {
 	
